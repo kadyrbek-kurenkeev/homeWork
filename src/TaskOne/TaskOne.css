@@ -1,0 +1,22 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.container {
+  width: 100%;
+}
+.taskOne {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.block {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+input {
+  margin-bottom: 10px;
+}

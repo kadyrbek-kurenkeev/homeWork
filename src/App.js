@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import TaskOne from "./TaskOne/TaskOne";
+import TaskTwo from "./TaskTwo/TaskTwo";
+import ProductList from "./TaskThree/ProductList";
 
+import { useState } from "react";
 function App() {
+  const [age, setAge] = useState();
+  const [state, setState] = useState();
+  const [one, setOne] = useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TaskOne state={state} setState={setState} one={one} setOne={setOne} />
+      <TaskTwo age={age} setAge={setAge} />
+      <ProductList />
     </div>
   );
 }
